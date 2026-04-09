@@ -1,33 +1,37 @@
-# Sistema de Controle de Estoque (Java + PostgreSQL)
+# Sistema de Controle de Estoque (Java + Spring Boot + PostgreSQL)
 
-Projeto desenvolvido para praticar CRUD com Java utilizando JDBC e banco de dados PostgreSQL.
+Projeto desenvolvido para praticar desenvolvimento de API REST com Java utilizando Spring Boot e banco de dados PostgreSQL.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
 - Cadastrar produtos
 - Listar produtos
+- Buscar produto por ID
 - Atualizar produtos
 - Remover produtos
 
-## Tecnologias
+## 🛠️ Tecnologias
 
-- Java (JDK 17)
+- Java 17
+- Spring Boot
+- Spring Data JPA
 - PostgreSQL
-- JDBC
-- IntelliJ IDEA
+- Maven
+- Postman
 
-## Estrutura
+## 📌 Endpoints
 
-- DAO (acesso ao banco)
-- Model (entidades)
-- Util (conexão)
+| Método | Endpoint | Descrição |
+|--------|--------|-----------|
+| GET | /produtos | Listar todos |
+| GET | /produtos/{id} | Buscar por ID |
+| POST | /produtos | Criar |
+| PUT | /produtos/{id} | Atualizar |
+| DELETE | /produtos/{id} | Deletar |
 
-## Como executar
+## ▶️ Como executar
 
-1. Criar banco PostgreSQL
-2. Executar script SQL das tabelas
-3. Rodar o projeto no IntelliJ
-
-## Autor
-
-Victor Bado
+1. Clonar o repositório
+2. Configurar o banco PostgreSQL
+3. Rodar o projeto
+4. Testar via Postman
